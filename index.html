@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Block Burst</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="game-shell">
+    <header class="hud">
+      <div class="stat">
+        <span class="label">Score</span>
+        <span id="score">0</span>
+      </div>
+      <div class="stat">
+        <span class="label">Best</span>
+        <span id="best">0</span>
+      </div>
+    </header>
+
+    <section class="board-area">
+      <div id="board" class="board"></div>
+    </section>
+
+    <section class="hand-area">
+      <h2>Next Blocks</h2>
+      <div id="hand" class="hand"></div>
+    </section>
+  </main>
+
+  <div id="game-over-modal" class="game-over-modal hidden">
+    <div class="game-over-card">
+      <h2>Game Over</h2>
+      <p>더 이상 블록을 놓을 수 없습니다.</p>
+      <button id="restart-button" type="button">다시 시작</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
